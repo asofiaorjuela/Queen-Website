@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queen</title>
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-queen-1975.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#album">Albums</a></li>
+                    <li><a href="#songs">Top 6</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>The hole point of Queen was <br> to be <span>original</span> </h1>
+                <p>- Freddie mercury</p>
+            </div>
+        </div>
+    </div>
+
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/QueenColor.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About</h1>
+                <p>Queen, British rock band whose fusion of heavy metal, glam rock, and camp theatrics made it one of the most popular groups of the 1970s. Although generally dismissed by critics, Queen crafted an elaborate blend of layered guitar work by virtuoso Brian May and overdubbed vocal harmonies enlivened by the flamboyant performance of front man and principal songwriter Freddie Mercury.</p>
+                <br>
+                <p>Their earliest works were influenced by progressive rock, hard rock and heavy metal, but the band gradually ventured into more conventional and radio-friendly works by incorporating further styles, such as arena rock and pop rock.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('members')">Members</p>
+                    <p class="tab-links" onclick="opentab('awards')">Awards</p>
+                    <p class="tab-links" onclick="opentab('legacy')">Legacy</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="members">
+                    <ul>
+                        <li><span>Freddie Mercury</span><br>Vocals, piano, guitar, keyboards</li>
+                        <li><span>Brian May</span><br>Vocals, piano, guitar, keyboards</li>
+                        <li><span>Roger Taylor</span><br>Drums, percussion, keyboards, vocals</li>
+                        <li><span>John Deacon</span><br>Bass guitar, double bass, keyboards</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="awards">
+                    <ul>
+                        <li><span>1977 - Britt Awards</span><br>"Bohemian Rhapsody" British Single of the year</li>
+                        <li><span>1990 - Britt Awards</span><br>Queen Outstanding Contribution to Music</li>
+                        <li><span>2002 - Walk of Fame</span><br>Queen were given a star on the Hollywood Walk of Fame</li>
+                        <li><span>2018 - Grammy</span><br>Grammy Lifetime Achievement Award</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="legacy">
+                    <ul>
+                        <li><span>Queen: The Studio Experience</span><br>Montreux, Switzerland</li>
+                        <li><span>Freddie Mercury Museum</span><br>Zanzibar, Tanzania</li>
+                        <li><span>Freddie Mercury Statue</span><br>Montreux, Switzerland</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="album">
+    <div class="container">
+        <h1 class="sub-title">Best seller albums</h1>
+        <div class="album-list">
+        <div>
+            <img src="images/GreatestHitsI.jpg" alt="">
+            <h2>Greatest Hits I  1981</h2>
+            <p>Sales: 25,000,000 copies</p>
+
+        </div>
+
+        <div>
+            <img src="images/Madeinheaven.jpeg" alt="">
+            <h2>Made in heaven  1995</h2>
+            <p>Sales: 20,000,000 copies</p>
+
+        </div>
+
+        <div>
+            <img src="images/GreatestHits2.png" alt="">
+            <h2>Greatest Hits II  1991</h2>
+            <p>Sales: 19,000,000 copies</p>
+        </div>
+        </div>
+
+    </div>
+</div>
+
+<!------Repeticion de lo dañado---->
+
+<div id="songs">
+    <div class="container">
+        <h1 class="sub-title">Sofia's Top 6 </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/dont_stop_me_now.jpeg">
+                <div class="layer2">
+                    <h3><b>Don't Stop Me Now</b></h3>
+                    <p>Featured on their 1978 album Jazz that was released as a single in 1979. Written by lead singer Freddie Mercury, it was recorded in August 1978 at Super Bear Studios in Berre-les-Alpes (Alpes-Maritimes), France, and is the twelfth track on the album.</p>
+                    <span id="playA">Play</span>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Somebody_to_Love.jpeg">
+                <div class="layer2">
+                    <h3><b>Somebody To Love</b></h3>
+                    <p>Written by the lead singer/pianist Freddie Mercury. It reached No. 2 in the UK and No. 13 on the Billboard Hot 100 in the US. The song demonstrated that "Queen could swing as hard as it could rock, by channeling the spirit of gospel music".</p>
+                    <span id="playB">Play</span>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/love_of_my_life.jpg">
+                <div class="layer2">
+                    <h3><b>Love Of My Life</b></h3>
+                    <p>Written by Freddie Mercury about his then fiance Mary Austin. After Queen performed the song in South America in 1981, the version from their live album Live Killers reached number 1 in the singles chart in Argentina and Brazil, and stayed in the charts in both countries for an entire year.</p>
+                    <span id="playC">Play</span>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Radio_gaga.jpeg">
+                <div class="layer2">
+                    <h3><b>Radio Ga Ga</b></h3>
+                    <p>Written by their drummer Roger Taylor. The song, which makes a nostalgic defence of the radio format, was a worldwide success for the band, reaching number one in 19 countries, number two on the UK Singles Chart and the Australian Kent Music Report and number 16 on the US Billboard Hot 100.</p>
+                    <span id="playD">Play</span>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Fat_bottomed_girls.jpg">
+                <div class="layer2">
+                    <h3><b>Fat Bottomed Girls</b></h3>
+                    <p>Written by guitarist Brian May, the song appears on the band's seventh studio album Jazz (1978) and later on their compilation album Greatest Hits. The song is formed around an open bluesy, metallic guitar tuning, and opens with its chorus. It was one of the few Queen songs played in an alternative (drop D) guitar tuning.</p>
+                    <span id="playE">Play</span>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Another_one_bites_the_dust.jpeg">
+                <div class="layer2">
+                    <h3><b>Another One Bites The Dust</h3></b>
+                    <p>Written by bassist John Deacon, the song was featured on the group's eighth studio album The Game (1980). It was a worldwide hit, charting number one on the US Billboard Hot 100 for three weeks, from 4 October to 18 October (being their second and final number-one single in the country).</p>
+                    <span id="playF">Play</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section id="contact">
+    <div class="containercontact">
+        <div class="row">
+            <div class="contactleft">
+            <h1>Share your thoughts</h1>
+            <form action="https://formsubmit.co/sofia-orjuela@hotmail.com" method="POST">
+                <input type="name" placeholder="Enter name" hint="name?" required>
+                <input type="email" placeholder="Enter Email" hint="email?" required>
+                <input type="Message" placeholder="Tell Us" hint="comment?" required>
+                <button type="submit">Join</button>  
+            </form>
+        </div> 
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copy right © Sofía. University Project</p>
+    </div>
+
+</section>
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+
+<script src="sketch.js"></script>
+
+</body>
+</html>
